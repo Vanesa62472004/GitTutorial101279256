@@ -22,7 +22,7 @@ class File {
         string getContent ( );
 
         // helpers
-        bool lessThan(const File& other_date);
+        bool lessThan(const File& other);
         
         // print function
         void print( );

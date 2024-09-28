@@ -19,8 +19,8 @@ string File::getName ( ){
 }
 
 
-bool File::lessThan(const File& other_date ){
-    return date.lessThan(other_date);
+bool File::lessThan(const File& other){
+    return date.lessThan(other.date);
 }
 
 void File::print( ) {
