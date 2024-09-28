@@ -17,12 +17,12 @@ class File {
         File(const string& inName, const string& inContent, const Date& date);
         
         // getters
-        Date& date( );
+        const Date& getDate() const;
         string getName ( );
         string getContent ( );
 
         // helpers
-        bool lessThan(const File& other);
+        bool lessThan(const File& other) const;
         
         // print function
         void print( );

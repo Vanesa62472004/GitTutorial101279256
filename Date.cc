@@ -49,12 +49,12 @@ int Date::getDay() const { return day; }
 int Date::getMonth() const { return month; }
 int Date::getYear() const { return year; }
 
-string Date::getMonthName(){
+string Date::getMonthName() const{
 	string months[12] = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
 	return months[month];	
 }
 
-string Date::getShortMonthName(){
+string Date::getShortMonthName() const{
 	string smonths[12]={"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul","Aug", "Sep", "Oct", "Nov", "Dec"};
 	return smonths[month];
 }
@@ -81,7 +81,7 @@ bool Date::isLeapYear(int year) const{
 	return year % 400 == 0;
 }
 
-int Date::convertToDays() const {
+int Date::convertToDays(){
 	int total = 0;
 	for (int i = 1901; i < year; i++){
 		total += 365;

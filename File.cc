@@ -6,7 +6,7 @@ using namespace std;
 
 File::File(const string& inName, const string& inContent, const Date& date){}
 
-Date& File::getDate( ){
+const Date& File::getDate() const {
     return date;
 }
 
@@ -19,8 +19,8 @@ string File::getName ( ){
 }
 
 
-bool File::lessThan(const File& other){
-    return date.lessThan(other.date);
+bool File::lessThan(const File& other) const {
+    return date.lessThan(other.getDate());
 }
 
 void File::print( ) {
