@@ -25,8 +25,8 @@ class File {
         bool lessThan(const File& other) const;
         
         // print function
-        void print( );
-        void printContents( );
+        void print();
+        void printContents();
 
 
     private:
